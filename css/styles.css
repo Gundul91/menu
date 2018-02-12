@@ -7,7 +7,7 @@ html{
   background-color: rgb(27, 77, 130);
   height: 0;
   margin: 0 auto;
-  transition:height 0.2s linear;
+  transition:height 0.3s linear;
 }
 
 ul{
@@ -27,18 +27,56 @@ li{
   align-items:center;
 }
 
-.menu-elements{
+/*transizioni in chiusura*/
+
+.dashboard{
   opacity:0;
-  transition:opacity 0.1s linear 0s;
+  transition:opacity 0.2s linear 0s;
 }
 
-.menu:hover .menu-elements{
+.projhect{
+  opacity:0;
+  transition:opacity 0.16s linear 0s;
+}
+.users{
+  opacity:0;
+  transition:opacity 0.12s linear 0s;
+}
+.comments{
+  opacity:0;
+  transition:opacity 0.08s linear 0s;
+}
+.stats{
+  opacity:0;
+  transition:opacity 0.04s linear 0s;
+}
+
+/*transizioni in apertura*/
+
+.menu:hover .dashboard{
   opacity:1;
-  transition:opacity 0.2s linear 0.2s;
+  transition:opacity 0.1s linear 0s;
+}
+.menu:hover .projhect{
+  opacity:1;
+  transition:opacity 0.2s linear 0s;
+}
+.menu:hover .users{
+  opacity:1;
+  transition:opacity 0.3s linear 0s;
+}
+.menu:hover .comments{
+  opacity:1;
+  transition:opacity 0.4s linear 0s;
+}
+.menu:hover .stats{
+  opacity:1;
+  transition:opacity 0.5s linear 0s;
 }
 
 .menu:hover{
   height:400px;
+  transition:height 0.2s linear 0s;
 }
 
 img{
