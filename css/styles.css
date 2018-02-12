@@ -1,0 +1,72 @@
+html{
+  background-color: black;
+}
+
+.menu{
+  width: 300px;
+  background-color: rgb(27, 77, 130);
+  height: 0;
+  margin: 0 auto;
+  transition:height 0.2s linear;
+}
+
+ul{
+  list-style-type: none;
+  padding:0;
+  color:rgb(185, 185, 185);
+}
+
+li{
+  padding:15px 10px 15px 20px;
+  cursor:default;
+}
+
+.user{
+  background-color: rgb(42, 201, 60);
+  display:flex;
+  align-items:center;
+}
+
+.menu-elements{
+  opacity:0;
+  transition:opacity 0.1s linear 0s;
+}
+
+.menu:hover .menu-elements{
+  opacity:1;
+  transition:opacity 0.2s linear 0.2s;
+}
+
+.menu:hover{
+  height:400px;
+}
+
+img{
+  width: 45px;
+  border-radius: 50%;
+}
+
+a{
+  margin:10px;
+}
+
+.dashboard, .comments{
+  background-color: rgb(27, 46, 92);
+  color:rgb(42, 201, 60);
+}
+
+.user>a, .dashboard>a, .comments>a{
+  color:white;
+}
+
+.user{
+  padding: 15px;
+}
+
+.user, .dashboard, .comments{
+  cursor:pointer;
+}
+
+.dashboard:hover, .comments:hover{
+  background-color:rgb(240, 136, 41);
+}
